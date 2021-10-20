@@ -1,0 +1,227 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #ebf2ff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.navbar__brand {
+  width: 100px;
+}
+
+.navbar__logo {
+  width: 100%;
+}
+
+.button__primary  {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+     #dd2476 51%,
+     #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.button__primary :hover {
+  /* background-position: right center;  */
+  border: 2px solid #FF6767;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.hero__image__container,.explore__hotels__container{
+  width: 100%;
+}
+
+.hero__image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.hero__text,.hotel__description {
+  font-weight: 800;
+  font-size: 30px;
+  margin: 20px 0;
+  color: #1d3557;
+}
+
+.food__card__description, {
+  padding: 15px;
+}
+
+.food__card {
+  background-color: #F9F9F9;
+}
+
+.food__card__image__container {
+  width: 100%;
+}
+
+.food__image {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+.explore__menu__text {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1d3557;
+}
+.explore__hotels__text{
+    font-size: 24px;
+}
+.restaurant__card__image__container{
+  width: 100%;
+}
+.explore__hotels__image__container{
+  width: 100%;
+}
+.row1__image,.row2__image{
+  display: flex;
+  gap:10px;
+
+
+}
+.view__more__button{
+  width: 100%;
+}
+#view__more{
+  width: 100%;
+  margin:4px;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+
+}
+.restaurant__small__image{
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 150px;
+  height: 80px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+.restaurant__large__image{
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+@media (min-width: 768px) {
+  .explore__menu__lists {
+    margin-top: 45px;
+    display: flex;
+    gap: 15px;
+    padding: 0 30px;
+  }
+  .explore__menu__container {
+    position: relative;
+  }
+  .explore__menu__gradient__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+       #dd2476 51%,
+       #ff512f 100%
+      );
+    z-index: -3;
+    transform: skewY(-5deg);
+  }
+
+  #pizza__card {
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .hero__container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .explore__hotels__container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+     max-width: 60%;
+  }
+
+  .explore__menu__lists {
+    gap: 25px;
+  }
+
+   .navbar__brand {
+     width: 80px;
+   }
+
+   .button__primary  {
+     padding: 18px;
+     font-size: 15px;
+   }
+   .view__more__button{
+
+     width: 16%;
+     padding-left: 340px;
+   }
+   #view__more{
+     border: none;
+     background-color:  #dd2476;
+     align-items: center;
+     font-size: 15px;
+     margin-top: -15px;
+
+   }
+   .hero__description {
+     width: 100%;
+   }
+
+   .hero__text {
+     font-size: 40px;
+   }
+
+   .explore__menu__text {
+     font-size: 48px;
+   }
+}
